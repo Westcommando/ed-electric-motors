@@ -453,17 +453,6 @@ footer{
   }
 }
 
-@media (max-width: 480px) {
-  .nav a,
-  .main a {
-    font-size: 18px; /* Slightly larger for very small screens */
-    padding: 14px 20px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-}
 
 
 
