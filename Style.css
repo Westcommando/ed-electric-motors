@@ -371,7 +371,94 @@ footer{
   font-size: 16px;
   color: #444;
   line-height: 1.6;
+}/* ========== RESPONSIVE STYLES ========== */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .nav,
+  .main ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav li,
+  .main li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 20px 0;
+  }
+
+  .intro-section,
+  .statement-section,
+  .about-section,
+  .contact-section,
+  .services-section {
+    padding: 20px;
+  }
+
+  .image-gallery,
+  .services-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-box,
+  .image-gallery figure {
+    width: 100%;
+  }
+
+  .contact-section form,
+  .contact-info {
+    width: 100%;
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+  }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .intro-section h2,
+  .statement-section h2,
+  .about-section h2 {
+    font-size: 24px;
+  }
+
+  .intro-section p,
+  .statement-section p,
+  .contact-section p,
+  .about-section p {
+    font-size: 16px;
+  }
+
+  .core-values li {
+    font-size: 15px;
+  }
+
+  .service-box h2 {
+    font-size: 20px;
+  }
+
+  .service-box p {
+    font-size: 15px;
+  }
+}
+
 
 
 
