@@ -1,112 +1,185 @@
-/* Base Styles */
-body {
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-}
-
+body{background-color: #f5f5f5;}
 header {
-  background-image: url('images/motors.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 300px;
+ background-image: url('images/motors.png');
+  background-size: cover;         /* makes image cover the whole area */
+  background-repeat: no-repeat;   /* prevents tiling */
+  background-position: center;    /* centers the image */
+  height: 300px;                  /* make sure there's enough height */
   color: white;
-  text-align: center;
 }
 
-h1 {
-  text-align: center;
-  color: #fefefe;
-  font-family: Arial, sans-serif;
-  font-size: 60px;
-  font-weight: bold;
-  margin-bottom: 24px;
-  padding-bottom: 80px;
-}
 
-.nav,
-.main ul {
-  list-style: none;
+
+.nav{
+    list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: flex; /* lays out items horizontally */
+  gap: 10px;  
   justify-content: flex-end;
-  gap: 10px;
 }
-
-.nav li,
-.main li {
-  float: left;
-}
-
-.nav a,
-.main a,
-.nav1,
-#nav2,
-#nav3,
-#nav4,
-#nav5,
-#nav6 {
-  background-color: cyan;
+.nav1 {
+  background-color:cyan;
   color: black;
   padding: 10px 20px;
-  text-decoration: none;
+  text-decoration: none;  /* removes underline */
   border: none;
-  border-radius: 5px;
+  border-radius: 5px;     /* rounded corners */
   font-weight: bold;
-  display: inline-block;
-  cursor: pointer;
-  transition: 0.3s;
+  display: inline-block;  /* ensures padding works properly */
+  cursor: pointer;        /* makes it feel like a button */
+  transition: 0.3s;       /* smooth hover effect */
 }
 
-.nav a:hover,
-.main a:hover,
-.nav1:hover,
-#nav2:hover,
-#nav3:hover,
-#nav4:hover,
-#nav5:hover,
-#nav6:hover {
+.nav1:hover {
   background-color: lightblue;
 }
+#nav2 {
+  background-color:cyan;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;  /* removes underline */
+  border: none;
+  border-radius: 5px;     /* rounded corners */
+  font-weight: bold;
+  display: inline-block;  /* ensures padding works properly */
+  cursor: pointer;        /* makes it feel like a button */
+  transition: 0.3s;       /* smooth hover effect */
+}
 
+#nav2:hover {
+  background-color: lightblue;
+}
+#nav3 {
+  background-color:cyan;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;  /* removes underline */
+  border: none;
+  border-radius: 5px;     /* rounded corners */
+  font-weight: bold;
+  display: inline-block;  /* ensures padding works properly */
+  cursor: pointer;        /* makes it feel like a button */
+  transition: 0.3s;       /* smooth hover effect */
+}
+
+#nav3:hover {
+  background-color: lightblue;
+}
+h1 {
+  text-align: center;
+  color:#fefefe;
+  font-family: Arial, sans-serif;
+  font-size: 60px;       /* makes the text big */
+  font-weight: bold;     /* optional: makes it bolder */
+           /* make sure it stands out over background */
+  margin-bottom: 24px;  
+ padding-bottom: 80px;
+}
+.main ul{
+  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(78, 78, 78);
+    overflow: hidden;
+}.main a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display :block;
+
+}.main a:hover{
+    background-color: black;
+}
+.main li{
+    float: left;
+}
 .image img {
   width: 300px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.intro-section,
-.statement-section,
-.about-section,
-.contact-section,
-.services-section {
+
+.intro-section {
   padding: 60px 20px;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* light grey background */
   color: #333;
+  text-align: center;
   font-family: Arial, sans-serif;
 }
 
-.intro-section h2,
-.statement-section h2,
-.about-section h2,
-.contact-section h2 {
+.intro-section h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #003366;
+}
+
+.intro-section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color:  #f5f5f5;
+}
+
+.image-gallery figure {
+  width: 300px;
+  text-align: center;
+  margin: 0;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.image-gallery figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #336699; /* soft industrial blue */
+}
+.image-gallery figure:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}#services-header {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-top: 40px;
+}.statement-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.statement-section h2 {
+  font-size: 32px;
+  margin-top: 30px;
+  color: #003366; /* Deep blue for headings */
   border-bottom: 2px solid #00bfff;
   padding-bottom: 5px;
 }
 
-.intro-section p,
-.statement-section p,
-.about-section p,
-.contact-section p {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  line-height: 1.8;
+.statement-section p {
+  margin-top: 15px;
   font-size: 18px;
 }
 
@@ -121,59 +194,74 @@ h1 {
   font-size: 17px;
   padding-left: 10px;
 }
+footer{
+    background-color: #003366;
+    text-align: center;
+    color: white;
+    padding: 20px;
 
-.image-gallery,
-.services-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-.image-gallery figure,
-.service-box {
-  width: 300px;
-  text-align: center;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}footer a{
+    text-decoration: none;
+    color:black
+}.contact-section {
+  max-width: 800px;
+  margin: 40px auto;
   padding: 20px;
-}
-
-.image-gallery img,
-.service-box img {
-  width: 100%;
-  height: auto;
+  background-color: #f5f5f5;
   border-radius: 8px;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.image-gallery figcaption,
-.service-box h2 {
+.contact-section h2 {
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section label {
   margin-top: 10px;
-  font-size: 16px;
-  color: #336699;
+  font-weight: bold;
 }
 
-.service-box p {
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-section button {
+  margin-top: 20px;
+  background-color: #003366;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #005599;
+}
+
+.contact-info {
+  margin-top: 30px;
   font-size: 16px;
-  color: #444;
   line-height: 1.6;
 }
 
-footer {
-  background-color: #003366;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-/* WhatsApp Floating Button */
-.whatsapp-float {
+.map-container {
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}.whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -191,52 +279,97 @@ footer a {
 
 .whatsapp-float:hover {
   transform: scale(1.1);
+}.about-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  header {
-    height: 350px;
-    background-size: 150%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 40px;
-    padding: 30px 0;
-  }
-
-  .nav,
-  .main ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .nav a,
-  .main a,
-  .nav1,
-  #nav2,
-  #nav3,
-  #nav4,
-  #nav5,
-  #nav6 {
-    font-size: 18px;
-    padding: 14px 20px;
-  }
-
-  .intro-section,
-  .statement-section,
-  .about-section,
-  .contact-section,
-  .services-section {
-    padding: 20px;
-  }
-
-  .whatsapp-float {
-    bottom: 15px;
-    right: 15px;
-  }
+.about-section h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  color: #003366;
+  border-bottom: 2px solid #00bfff;
+  padding-bottom: 5px;
 }
+
+.about-section p {
+  font-size: 18px;
+  margin-top: 10px;
+}#nav4{background-color:cyan;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;  /* removes underline */
+  border: none;
+  border-radius: 5px;     /* rounded corners */
+  font-weight: bold;
+  display: inline-block;  /* ensures padding works properly */
+  cursor: pointer;        /* makes it feel like a button */
+  transition: 0.3s;       /* smooth hover effect */
+}#nav4:hover {
+  background-color: lightblue;
+}#nav6{background-color:cyan;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;  /* removes underline */
+  border: none;
+  border-radius: 5px;     /* rounded corners */
+  font-weight: bold;
+  display: inline-block;  /* ensures padding works properly */
+  cursor: pointer;        /* makes it feel like a button */
+  transition: 0.3s;       /* smooth hover effect */
+}#nav6:hover {
+  background-color: lightblue;
+}#nav5{background-color:cyan;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;  /* removes underline */
+  border: none;
+  border-radius: 5px;     /* rounded corners */
+  font-weight: bold;
+  display: inline-block;  /* ensures padding works properly */
+  cursor: pointer;        /* makes it feel like a button */
+  transition: 0.3s;       /* smooth hover effect */
+}#nav5:hover {
+  background-color: lightblue;
+}.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.service-box {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.service-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-box h2 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+  color: #003366;
+}
+
+.service-box p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
