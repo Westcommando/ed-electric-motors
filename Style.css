@@ -371,5 +371,69 @@ footer{
   font-size: 16px;
   color: #444;
   line-height: 1.6;
+}/* Existing styles preserved above */
+
+@media (max-width: 768px) {
+  header {
+    height: 350px;
+    background-size: 140%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 20px 0;
+  }
+
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .nav li {
+    float: none;
+    width: auto;
+  }
+
+  .nav1,
+  #nav2,
+  #nav3 {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .main ul {
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(78, 78, 78); /* Make sure background doesn't turn white */
+  }
+
+  .main a {
+    font-size: 16px;
+    padding: 14px;
+    color: white;
+  }
+
+  .main li {
+    float: none;
+    width: auto;
+  }
+
+  .intro-section,
+  .statement-section,
+  .about-section,
+  .contact-section,
+  .services-section {
+    padding: 20px;
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+  }
 }
+
 
