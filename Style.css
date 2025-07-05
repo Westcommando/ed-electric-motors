@@ -1,10 +1,17 @@
-body{background-color: #f5f5f5;}
+body{
+ margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
 header {
- background-image: url('images/motors.png');
-  background-size: cover;         /* makes image cover the whole area */
-  background-repeat: no-repeat;   /* prevents tiling */
-  background-position: center;    /* centers the image */
-  height: 300px;                  /* make sure there's enough height */
+  background-image: url('images/motors.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 40px 20px;
+  text-align: center;
   color: white;
 }
 
@@ -76,25 +83,40 @@ h1 {
   margin-bottom: 24px;  
  padding-bottom: 80px;
 }
-.main ul{
-  
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(78, 78, 78);
-    overflow: hidden;
-}.main a{
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    display :block;
 
-}.main a:hover{
-    background-color: black;
+.main {
+  width: 100%;
+  background-color: rgb(78, 78, 78);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
-.main li{
-    float: left;
+
+.main ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main li {
+  flex: 0 0 auto;
+}
+
+.main a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.main a:hover {
+  background-color: black;
 }
 .image img {
   width: 300px;
@@ -420,37 +442,16 @@ footer{
     right: 15px;
   }
 }
-.main {
-  width: 100%;
-  background-color: rgb(78, 78, 78);
-}
+  .main ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 
-.main ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  gap: 16px;
-}
-
-.main li {
-  float: none;
-}
-
-.main a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  padding: 16px 24px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.main a:hover {
-  background-color: black;
-}
+  .main a {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
 
 }
 
