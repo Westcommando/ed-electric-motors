@@ -402,16 +402,17 @@ footer{
 }/* Existing styles preserved above */
 
 @media (max-width: 768px) {
-  header {
-    height: 350px;
-    background-size: 140%;
-    padding: 20px;
+ header {
+    height: auto;
+    background-size: cover;
+    padding: 40px 20px;
     text-align: center;
   }
 
   h1 {
-    font-size: 40px;
-    padding: 20px 0;
+    font-size: 8vw;
+    margin: 0;
+    padding: 40px 0;
   }
 
   .nav {
